@@ -86,8 +86,8 @@ class CustomerServiceTest {
         verify(exactly = 1) { customerRepository.delete(fakeCustomer) }
     }
 
-
-    private fun buildCustomer(
+    companion object {
+     fun buildCustomer(
         firstName: String = "Jeff",
         lastName: String = "Carvalho",
         cpf: String = "28475934625",
@@ -112,4 +112,4 @@ class CustomerServiceTest {
     )
 
 
-}
+}}
